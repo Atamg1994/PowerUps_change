@@ -1,6 +1,9 @@
 ﻿using System;
 using HarmonyLib;
+using Il2CppSystem.Collections.Generic;
+using Newtonsoft.Json;
 using VampireSurvivors.Data;
+using VampireSurvivors.Data.Items;
 
 namespace PowerUps_change.Patches
 {

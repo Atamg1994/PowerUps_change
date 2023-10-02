@@ -126,9 +126,10 @@ namespace PowerUps_change
 
 		public static void update_items(DataManager dataManager)
 		{
-			if (VSPlugin.AllItems == null || dataManager.AllItems.Count != VSPlugin.AllItems.Count)
+			if (VSPlugin.AllItems == null )
 			{
-				dataManager.AllItems = VSPlugin.load_items(dataManager.AllItems);
+				var iems = VSPlugin.load_items(dataManager.AllItems);
+				dataManager.AllItems = iems;
 			}
 		}
 		
@@ -144,7 +145,7 @@ namespace PowerUps_change
 				try
 				{
 					VSPlugin.PowerUps_efects(dataManager);
-					update_items(dataManager);
+				
 				}
 				catch (Exception ex)
 				{

@@ -78,12 +78,14 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="Patches\Patchesx.cs" />
+    <Compile Include="Patches\Patchesx_DataManager_AllItems_hook.cs" />
     <Compile Include="Patches\Patchesx_GetConvertedWeapons.cs" />
     <Compile Include="Patches\Patchesx_IncreaseMaxWeapons.cs" />
     <Compile Include="Patches\Patchesx_SelectedMaxWeapons_hook.cs" />
     <Compile Include="Patches\Patchesx_SelectedMaxWeapons_hook_S.cs" />
     <Compile Include="Patches\Patchesx_ShowCharacterSelect.cs" />
     <Compile Include="Patches\Patches_CharacterController_OnUpdate.cs" />
+    <Compile Include="Patches\Patches_GameManager_OnUpdate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>

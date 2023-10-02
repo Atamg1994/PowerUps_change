@@ -23,7 +23,7 @@ namespace PowerUps_change.Patches
 				if (__result != null)
 				{
 					VSPlugin.dataManager = __instance;
-					VSPlugin.update_items(__instance);
+				//	VSPlugin.update_items(__instance);
 					if (VSPlugin.AllWeaponData_obj == null || VSPlugin.AllWeaponData_obj.Count != __result.Count)
 					{
 						__instance.AllWeaponData = VSPlugin.load_weapon_data(__instance.AllWeaponData);

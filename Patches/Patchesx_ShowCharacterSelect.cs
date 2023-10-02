@@ -20,7 +20,12 @@ namespace PowerUps_change.Patches
 				{
 					VSPlugin.max_passives_select = max_passives;
 				}
-				
+				if (__instance != null && __instance._dataManager != null)
+				{   
+					// reload item config 
+					VSPlugin.AllItems = null;
+					VSPlugin.update_items(__instance._dataManager);
+				}
 				
 				if (VSPlugin.max_weapon_select == 0)
 				{
